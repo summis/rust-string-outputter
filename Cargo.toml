@@ -1,5 +1,5 @@
 [package]
-name = "rust-sring-outputter"
+name = "rust-string-outputter"
 version = "0.1.0"
 authors = ["summis <summanentommi@gmail.com>"]
 edition = "2018"
