@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rust-string-outputter-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rust-string-outputter
+  template:
+    metadata:
+      labels:
+        app: rust-string-outputter
+    spec:
+      containers:
+        - name: rust-string-outputter
+          image: summila/rust-string-outputter
