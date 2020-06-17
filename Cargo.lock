@@ -107,7 +107,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-sring-outputter"
+name = "rust-string-outputter"
 version = "0.1.0"
 dependencies = [
  "chrono",
