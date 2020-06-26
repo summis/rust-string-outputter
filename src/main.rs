@@ -39,7 +39,8 @@ fn handle_client(stream: TcpStream, response: String) {
 }
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:8080").unwrap();
+    // https://www.reddit.com/r/docker/comments/a8zhhl/rust_binary_listens_on_localhost3000_locally_not/
+    let listener = TcpListener::bind("0.0.0.0:8080").unwrap();
     let hash = Arc::new(rand_string());
 
     // Start separate thread for loop. `move` allows using hash inside thread.

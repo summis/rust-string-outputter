@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: rust-string-outputter
-          image: summila/rust-string-outputter
+          image: summila/rust-string-outputter:v2
